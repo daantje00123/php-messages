@@ -1,0 +1,24 @@
+{
+    "name": "daanvanberkel/php-messages",
+    "description": "PHP front-end messages",
+    "keywords": ["messages", "notifications", "front-end"],
+    "homepage": "https://github.com/daantje00123/php-messages",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daan van Berkel",
+            "email": "info@daanvanberkel.nl",
+            "homepage": "https://www.daanvanberkel.nl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DvbPhpMessages\\": "src/"
+        }
+    }
+}
