@@ -157,6 +157,42 @@ class MessageHelper {
 		$this->success_template = $template;
 	}
 
+    /**
+     * Are there errors in buffer?
+     *
+     * @return bool
+     */
+	public function hasErrors() {
+	    return !(empty($this->messages['errors']));
+    }
+
+    /**
+     * Are there warnings in buffer?
+     *
+     * @return bool
+     */
+    public function hasWarnings() {
+        return !(empty($this->messages['warnings']));
+    }
+
+    /**
+     * Are there info in buffer?
+     *
+     * @return bool
+     */
+    public function hasInfo() {
+        return !(empty($this->messages['info']));
+    }
+
+    /**
+     * Are there success in buffer?
+     *
+     * @return bool
+     */
+    public function hasSuccess() {
+        return !(empty($this->messages['success']));
+    }
+
 	/**
 	 * @return string
 	 */
